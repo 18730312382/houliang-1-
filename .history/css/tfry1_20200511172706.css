@@ -1,0 +1,151 @@
+
+#investorstable {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	table-layout: fixed;
+	margin-top: 30px;
+	border-collapse: collapse;
+	border: 0px solid #000;
+}
+
+#investorstable tr {
+	display: flex;
+	flex-flow: row wrap;
+	border-right: 1px solid #e4eef6;
+	border-bottom: 1px solid #e4eef6;
+	border-left: 1px solid #e4eef6;
+	height: auto;
+}
+
+#investorstable tr:nth-of-type(1) {
+	line-height: 90px;
+	height: 90px;
+	border-top: 1px solid #e4eef6;
+}
+
+#investorstable tr:nth-of-type(1) .ft {
+	line-height: 90px;
+	height: 90px;
+}
+
+#investorstable tr:nth-of-type(1) .nt {
+	line-height: 90px;
+	height: 90px;
+}
+
+#investorstable tr:nth-last-of-type(1) .nt {
+	height: 60px;
+	line-height: 20px;
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+
+#investorstable tr:nth-last-of-type(1) .ft {
+	height: 60px;
+	line-height: 60px;
+	/* background-color: #007AFF; */
+}
+
+.ft {
+	width: 160px;
+	background-color: #f2f9fc;
+	padding-left: 10px;
+	box-sizing: border-box;
+	line-height: 30px;
+	border-right: 1px solid #e4eef6;
+	line-height: 40px;
+}
+
+.nt {
+	width: 238.5px;
+	display: flex;
+	flex-flow: row wrap;
+	padding-left: 10px;
+	box-sizing: border-box;
+	border-right: 1px solid #e4eef6;
+	line-height: 40px;
+}
+
+.nt:nth-last-of-type(1) {
+	border: 0;
+}
+
+.nt span {
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-radius: 5px;
+	background: #ef9898;
+	margin: 15px;
+	text-align: center;
+	color: white;
+	font-size: 24px;
+
+}
+
+.investorspage {
+	width: 10%;
+	margin: 30px auto 0;
+}
+
+.investorspage ul {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.investorspage ul li {
+	width: 33%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #434343;
+}
+
+.investorspage ul li img {
+	width: 100%;
+}
+
+.investorspage ul li span {
+	font-size: 18px;
+}
+
+#investorsdq {
+	color: #ffd800;
+}
+
+.investorsp {
+	width: 100%;
+	margin-top: 60px;
+	text-align: center;
+}
+
+.investorsp i {
+	display: block;
+	text-align: center;
+	margin: 50px 0;
+}
+#in img:hover{
+	transform: scale(1.05, 1.05)
+}
+#ispan {
+	display: block;
+	width: 210px;
+	height: 10px;
+	background: #f1f1f1;
+	position: relative;
+	margin: auto;
+	top: -25px;
+	z-index: -1;
+}
+
+.investorsp b {
+	font-size: 36px;
+	position: relative;
+}
+
+.investorsp div {
+	margin-top: 30px;
+	position: relative;
+}

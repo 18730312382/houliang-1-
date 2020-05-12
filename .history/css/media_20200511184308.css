@@ -1,0 +1,24 @@
+@media screen and (max-width:640px){
+    .bottom ul li {
+        width: 100%;
+        float: left;
+        text-align: center;
+        line-height: 30px;
+    }
+    
+    .bottom ul li dl {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+    }
+    .bottom ul li dl dd {
+        width: 100%;
+        font-weight: bold;
+        text-align: -webkit-left;
+    }
+    .bottom ul li dl dt {
+        width: 26%;
+        text-align: -webkit-left;
+    }
+}

@@ -1,0 +1,64 @@
+
+.brandcontent {
+	width: 100%;
+	margin: auto;
+	transition: all 0.4s;
+}
+.brandswiper {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
+}
+.swiper-container {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.swiper-slide i {
+	display: block;
+	width: 50%;
+}
+.swiper-slide i img {
+	margin-left: 60%;
+	width: 35%;
+}
+.brandriht {
+	width: 50%;
+	min-height: 00px;
+}
+.brandriht div {
+	width: 80%;
+	margin: 220px auto;
+	text-align: left;
+}
+.brandriht div b {
+	color: #ffdd00;
+	font-size: 45px;
+}
+#hr {
+	width: 60px;
+	background-color: #999999;
+	border: none;
+	height: 4px;
+	margin: 15px 0;
+}
+.brandriht div span {
+	font-size: 21px;
+}
+.brandriht div p {
+	font-size: 15px;
+	margin-top: 15px;
+	line-height: 30px;
+}

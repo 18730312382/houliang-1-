@@ -3,7 +3,7 @@
         float: left;
         width: auto;
         width: 202px;
-        padding: 10px 15px 0 2px;
+        padding: 18px 20px 0 50px;
         position: relative;
     }
     .head .nav ul li {
@@ -13,16 +13,8 @@
         z-index: 2;
         padding: 2px 16px;
     }
-    .gongsijianjie b{
-        display: block;
-        margin-left: -150px;
-
-    }
 }
 @media screen and (max-width:640px){
-    .bott{
-       width: 100%; 
-    }
     .bottom ul {
         width: 100%;
         height: auto;

@@ -1,6 +1,7 @@
 .ne-xi{
     width: 100%;
     padding-bottom: 10px;
+    padding-top: 20px !important;
 }
 .ne-xi .detail{
     width: 80%;
@@ -24,6 +25,7 @@
     width: 60%;
     margin: auto;
     margin-top: 20px;
+
 }
 .ne-xi .detaillist p{
     width: 100%;
@@ -41,41 +43,22 @@
 .ne-xi .news_list{
     width: 60%;
     margin: auto;
-    margin-top: 20px;
-}
-.ne-xi .news_list li{
-    width: 100%;
+    margin-bottom: 20px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    border-bottom: 1px dotted #ccc;
-    height: 35px;
-    line-height: 35px;
-    list-style-type :circle !important;
-    
+    align-items: center;
 }
-.ne-xi .news_list li a{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 1px dotted #ccc;
-    height: 35px;
-    line-height: 35px;
-    list-style-type :circle !important;
-    
-}
-.ne-xi .news_list li b{
-    width: 40%;
-    font-size: 14px;
-    overflow:hidden;
+.news_list .leftpre,.news_list .rightpre{
+    width: 26%;
+    overflow: hidden;
     text-overflow:ellipsis;
-    white-space:nowrap
-
+    white-space: nowrap;
 }
-.ne-xi .news_list li strong{
-    width: 20%;
-    font-size: 14px;
+.news_list .leftpre a,.news_list .rightpre a{
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap; 
 }
 @media screen and (max-width:640px){
     .ne-xi .detaillist{

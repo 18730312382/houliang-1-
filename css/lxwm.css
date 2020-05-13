@@ -226,13 +226,13 @@
 }
 .bottom i {
     display: block;
-    width: 13%;
+    width: 15%;
 }
 .bottom i img {
     margin-top: 30px;
 }
 .bottom ul {
-    width: 60%;
+    width: 57%;
     height: auto;
     display: flex;
     flex-flow: row wrap;

@@ -29,7 +29,7 @@
 }
 @media screen and (max-width:640px){
     .bottom i{
-        display: none
+        display: none !important;
     }
    
     .bott{
@@ -40,7 +40,7 @@
         height: auto;
         display: flex;
         flex-flow: row wrap;
-        display: none
+        display: none !important;
     }
     .bottom ul li {
         width: 100%;

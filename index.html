@@ -37,10 +37,8 @@
 
         .fly {
             position: fixed;
-            z-index: 1111;
+            z-index: 1000;
             font-size: 16px;
-            height: 20px;
-            width: 636px;
             white-space: nowrap; 
         }
 
@@ -1201,6 +1199,9 @@
             function floatBox() {
                 var fl = document.getElementById('fly');
 
+                var flWidth = fl.offsetWidth;
+                var flHeight = fl.offsetHeight
+
                 var chroX = document.documentElement.clientWidth;//yemian整个的高宽
                 var chroY = document.documentElement.clientHeight;
 
@@ -1209,7 +1210,7 @@
 
                 var timer = 0;
 
-                console.log(offsetTop)
+//                 console.log(offsetTop)
 
                 var x = 1;
                 var y = 1;
@@ -1224,14 +1225,14 @@
                     offsetTop += y;
                     fl.style.left = offsetLeft + 'px';
                     fl.style.top = offsetTop + 'px';
-                    console.log(chroY)
+//                     console.log(chroY)
                 }
                 timer = setInterval(function () {
                     move();
-                    if (offsetTop + 100 > chroY || offsetTop < 0) {
+                    if (offsetTop + flHeight > chroY || offsetTop < 0) {
                         y = -y;
                     }
-                    if (offsetLeft + 100 > chroX || offsetLeft < 0) {
+                    if (offsetLeft + flWidth > chroX || offsetLeft < 0) {
                         x = -x;
                     }
                 }, 10)
@@ -1240,15 +1241,7 @@
                     clearInterval(timer)
                 }
                 fl.onmouseleave = function () {
-                    timer = setInterval(function () {
-                        move();
-                        if (offsetTop + 100 > chroY || offsetTop < 0) {
-                            y = -y;
-                        }
-                        if (offsetLeft + 100 > chroX || offsetLeft < 0) {
-                            x = -x;
-                        }
-                    }, 10)
+                    floatBox()
                 }
             }
             //$(".banner1 .bnrTit,.banner1 .bnrInfr,.banner1 .groupData dd").addClass("fadeIn")

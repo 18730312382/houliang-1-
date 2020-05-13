@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta name="Author" content="厚粮餐饮">
-    <meta content="厚粮餐饮" name="design">
+    <meta name="Author" content="恒网、南京网站建设、系统开发、网络营销服务">
+    <meta content="恒网 www.71nc.com" name="design">
     <title></title>
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -33,15 +34,6 @@
             height: 100%;
             width: 100%;
             overflow: hidden;
-        }
-
-        .fly {
-            position: fixed;
-            z-index: 1111;
-            font-size: 16px;
-            height: 20px;
-            width: 636px;
-            white-space: nowrap; 
         }
 
         @media screen and (max-width:992px) {
@@ -260,9 +252,9 @@
             $("." + ccc).addClass("hover");
         })
     </script>
-    <!-- <div class="indRecord wow fadeInUp" data-wow-delay="0.2s">
+    <div class="indRecord wow fadeInUp" data-wow-delay="0.2s">
         创业有风险 投资需谨慎 @ 2019版权所有 河北厚粮餐饮管理有限公司 冀ICP备20000395号
-    </div> -->
+    </div>
     <header>
         <div class="animated fadeInDown top">
             <div class="menu fr" val="0"> <i></i> <i></i> <i></i>
@@ -427,8 +419,6 @@
             $(this).parents(".search").removeClass("hover");
         });
     </script>
-    <div class="fly" id="fly">公司于2019年11月22日收购燕之赵河北餐饮管理有限公司旗下虾秘以及拐角码头等品牌！</div>
-
     <div class="box swiper-container">
         <div class="swiper-wrapper">
             <div class="section box1 swiper-slide">
@@ -855,7 +845,7 @@
         <div class="boxArrow"><span>旗下品牌</span><i></i></div>
         <!-- <div class="boxArrow"><span>底部导航</span><i></i></div> -->
     </div>
-    <!-- <div class="indShare">
+    <div class="indShare">
         <ul>
             <li class="ico1 wow fadeInLeft" data-wow-delay="0.8s"> <a href=" "></a>
                 <div class="shareCode" style=" left:100%"> <img src="images/in-ewm01.jpg"> <i></i> </div>
@@ -867,7 +857,7 @@
                 <div class="shareCode"> <img src="images/in-ewm02.jpg"> <i></i> </div>
             </li>
         </ul>
-    </div> -->
+    </div>
     <div id="dialogBg">
         <form id="dialog" class="animated">
             <div class="tc-ss">
@@ -1197,60 +1187,6 @@
     </div> -->
     <script>
         window.onload = function () {
-            floatBox();
-            function floatBox() {
-                var fl = document.getElementById('fly');
-
-                var chroX = document.documentElement.clientWidth;//yemian整个的高宽
-                var chroY = document.documentElement.clientHeight;
-
-                var offsetLeft = fl.offsetLeft;//盒子的位置
-                var offsetTop = fl.offsetTop;
-
-                var timer = 0;
-
-                console.log(offsetTop)
-
-                var x = 1;
-                var y = 1;
-
-                window.onresize = function () {
-                    chroX = document.documentElement.clientWidth;//yemian整个的高宽
-                    chroY = document.documentElement.clientHeight;
-                }
-
-                function move() {
-                    offsetLeft += x;
-                    offsetTop += y;
-                    fl.style.left = offsetLeft + 'px';
-                    fl.style.top = offsetTop + 'px';
-                    console.log(chroY)
-                }
-                timer = setInterval(function () {
-                    move();
-                    if (offsetTop + 100 > chroY || offsetTop < 0) {
-                        y = -y;
-                    }
-                    if (offsetLeft + 100 > chroX || offsetLeft < 0) {
-                        x = -x;
-                    }
-                }, 10)
-
-                fl.onmouseenter = function () {
-                    clearInterval(timer)
-                }
-                fl.onmouseleave = function () {
-                    timer = setInterval(function () {
-                        move();
-                        if (offsetTop + 100 > chroY || offsetTop < 0) {
-                            y = -y;
-                        }
-                        if (offsetLeft + 100 > chroX || offsetLeft < 0) {
-                            x = -x;
-                        }
-                    }, 10)
-                }
-            }
             //$(".banner1 .bnrTit,.banner1 .bnrInfr,.banner1 .groupData dd").addClass("fadeIn")
             $(".fadeC").fadeOut();
             $(".fadeTop").delay(800).animate({ top: '-100%' }, 1500, 'linear');
@@ -1672,10 +1608,8 @@
                 $('header').addClass('nav_fixed');
             }
         })
-        
 
     </script>
-   
 </body>
 
 </html>

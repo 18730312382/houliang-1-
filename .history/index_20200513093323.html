@@ -36,12 +36,7 @@
         }
 
         .fly {
-            position: fixed;
-            z-index: 1111;
-            font-size: 16px;
-            height: 20px;
-            width: 636px;
-            white-space: nowrap; 
+            position: fixed
         }
 
         @media screen and (max-width:992px) {
@@ -427,7 +422,7 @@
             $(this).parents(".search").removeClass("hover");
         });
     </script>
-    <div class="fly" id="fly">公司于2019年11月22日收购燕之赵河北餐饮管理有限公司旗下虾秘以及拐角码头等品牌！</div>
+    <!-- <div class="fly" id="fly">公司于2019年11月22日收购燕之赵河北餐饮管理有限公司旗下虾秘以及拐角码头等品牌！</div> -->
 
     <div class="box swiper-container">
         <div class="swiper-wrapper">
@@ -1197,60 +1192,6 @@
     </div> -->
     <script>
         window.onload = function () {
-            floatBox();
-            function floatBox() {
-                var fl = document.getElementById('fly');
-
-                var chroX = document.documentElement.clientWidth;//yemian整个的高宽
-                var chroY = document.documentElement.clientHeight;
-
-                var offsetLeft = fl.offsetLeft;//盒子的位置
-                var offsetTop = fl.offsetTop;
-
-                var timer = 0;
-
-                console.log(offsetTop)
-
-                var x = 1;
-                var y = 1;
-
-                window.onresize = function () {
-                    chroX = document.documentElement.clientWidth;//yemian整个的高宽
-                    chroY = document.documentElement.clientHeight;
-                }
-
-                function move() {
-                    offsetLeft += x;
-                    offsetTop += y;
-                    fl.style.left = offsetLeft + 'px';
-                    fl.style.top = offsetTop + 'px';
-                    console.log(chroY)
-                }
-                timer = setInterval(function () {
-                    move();
-                    if (offsetTop + 100 > chroY || offsetTop < 0) {
-                        y = -y;
-                    }
-                    if (offsetLeft + 100 > chroX || offsetLeft < 0) {
-                        x = -x;
-                    }
-                }, 10)
-
-                fl.onmouseenter = function () {
-                    clearInterval(timer)
-                }
-                fl.onmouseleave = function () {
-                    timer = setInterval(function () {
-                        move();
-                        if (offsetTop + 100 > chroY || offsetTop < 0) {
-                            y = -y;
-                        }
-                        if (offsetLeft + 100 > chroX || offsetLeft < 0) {
-                            x = -x;
-                        }
-                    }, 10)
-                }
-            }
             //$(".banner1 .bnrTit,.banner1 .bnrInfr,.banner1 .groupData dd").addClass("fadeIn")
             $(".fadeC").fadeOut();
             $(".fadeTop").delay(800).animate({ top: '-100%' }, 1500, 'linear');
@@ -1672,10 +1613,52 @@
                 $('header').addClass('nav_fixed');
             }
         })
-        
+        var fl = document.getElementById('fly');
+
+        var chroX = document.documentElement.clientWidth;//yemian整个的高宽
+        var chroY = document.documentElement.clientHeight;
+
+        var offsetLeft = fl.offsetLeft;//盒子的位置
+        var offsetTop = fl.offsetTop;
+
+        var timer = 0;
+
+        console.log(offsetTop)
+
+        var x = 1;
+        var y = 1;
+
+        window.onresize = function () {
+            chroX = document.documentElement.clientWidth;//yemian整个的高宽
+            chroY = document.documentElement.clientHeight;
+        }
+
+        function move() {
+            offsetLeft += x;
+            offsetTop += y;
+            fl.style.left = offsetLeft + 'px';
+            fl.style.top = offsetTop + 'px';
+            // console.log(chroY)
+        }
+        window.onload = function () {
+            timer = setInterval(function () {
+                move();
+                if (offsetTop + 100 > chroY || offsetTop < 0) {
+                    y = -y;
+                }
+                if (offsetLeft + 100 > chroX || offsetLeft < 0) {
+                    x = -x;
+                }
+            }, 10)
+        }
+        fl.onmouseenter = function () {
+            clearInterval(timer)
+        }
+        fl.onmouseleave = function () {
+            window.onload();
+        }
 
     </script>
-   
 </body>
 
 </html>

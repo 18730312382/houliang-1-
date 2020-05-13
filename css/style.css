@@ -28,8 +28,8 @@
     right: 0;
     top: 20px;}
 
-.head .nav ul li .f_a{line-height:54px;display:block;text-align:center;font-size:18px;background:url(../images/xjt.png) no-repeat right center; padding-right:30px; color:#222}
-.head .nav ul li:hover .f_a,.head .nav ul li .f_a.on{color: #c41c27; transition:all .3s; font-weight:bold;background:url(../images/xjt1.png) no-repeat right center}
+.head .nav ul li .f_a{line-height:54px;display:block;text-align:center;font-size:18px; padding-right:30px; color:#222}
+.head .nav ul li:hover .f_a,.head .nav ul li .f_a.on{color: #c41c27; transition:all .3s; font-weight:bold;}
 .head .nav ul li .s_navbox{display:none;position: absolute;left: 0;width: 100%; background:#fff;z-index: 9999;box-sizing: border-box;border: 1px solid #d9d9d9; border-top:none;}
 .head .nav ul li .s_navbox .s_a a{color:#333;font-size:16px;text-transform:uppercase;display:block;text-align: center;border-top: 1px solid #d9d9d9;}
 .head .nav ul li .s_navbox .s_a a:hover{background-color:#c41c27;color: #fff;}

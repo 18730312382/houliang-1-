@@ -1241,15 +1241,7 @@
                     clearInterval(timer)
                 }
                 fl.onmouseleave = function () {
-                    timer = setInterval(function () {
-                        move();
-                        if (offsetTop + 100 > chroY || offsetTop < 0) {
-                            y = -y;
-                        }
-                        if (offsetLeft + 100 > chroX || offsetLeft < 0) {
-                            x = -x;
-                        }
-                    }, 10)
+                    floatBox()
                 }
             }
             //$(".banner1 .bnrTit,.banner1 .bnrInfr,.banner1 .groupData dd").addClass("fadeIn")

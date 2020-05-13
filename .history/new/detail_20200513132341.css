@@ -54,7 +54,7 @@
     list-style-type :circle !important;
     
 }
-.ne-xi .news_list li a{
+.ne-xi .news_list li{
     width: 100%;
     display: flex;
     flex-direction: row;

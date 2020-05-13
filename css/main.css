@@ -2242,7 +2242,13 @@ padding-right: 5px;
 	.ne-position{ display:none;}
 	.w1290{ width:100%; padding:0 1%;}
 	header{ background:#fff;}
-	.top{ position:absolute;}
+	.top{     position: fixed;
+        top: 0;
+        left: 0;
+        height: 60px;
+        overflow: visible;
+        z-index: 999;
+        width: 100%;}
 .menuMain{ top:50px; width:176px;}
 .menuBox{ padding-top:20px;}
 .gai-r-cd li h2 span{ font-size:18px;}

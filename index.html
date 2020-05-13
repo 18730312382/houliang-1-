@@ -219,7 +219,11 @@
             margin: auto;
             margin-bottom: 520px;
         }
-
+        .zhichi h1{
+            font-size: 30px;
+            text-align: center;
+            margin: 10px 0;
+        }
         .zhichi p {
             width: 80%;
             margin: auto;
@@ -227,7 +231,12 @@
             padding-top: 70px;
             margin: auto;
         }
-
+        .zhichi h1:nth-child(1){
+            margin-top: 30px;
+        }
+        .zhichi h1:nth-child(2){
+            margin-bottom: 30px;
+        }
         .zhichi ul {
             width: 100%;
         }
@@ -237,10 +246,18 @@
             float: left;
             margin-left: 1%;
             margin-bottom: 10px;
+            
         }
 
         .zhichi ul li img {
             width: 100%;
+            transition: all 1s ease-out;
+            -o-transition: all 1s ease-out;
+            -moz-transition: all 1s ease-out;
+            -webkit-transition: all 1s ease-out;
+        }
+        .zhichi ul li:hover img{
+            transform: rotateY(360deg);          
         }
     </style>
 </head>
@@ -672,10 +689,8 @@
             </div> -->
             <div class="section box4 swiper-slide">
                 <div class="zhichi">
-                    <h1 style="text-indent: 1em;
-                                margin-bottom: 20px;margin-top: 30px;text-indent: 2em">战略合作</h1>
-                    <h1 style="text-indent: 1em;
-                    margin-bottom: 20px;margin-top: 30px;text-indent: 2em">strategic cooperation</h1>
+                    <h1>战略合作</h1>
+                    <h1>strategic cooperation</h1>
                     <ul>
                         <li>
                             <img src="./images/zhanlue/02.jpg" />

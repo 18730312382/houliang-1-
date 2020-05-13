@@ -1,0 +1,10 @@
+.ne-xi{
+    width: 100%;
+}
+.ne-xi .detail{
+    width: 80%;
+    margin: auto;
+}
+.ne-xi .detail h1{
+    text-align: center
+}

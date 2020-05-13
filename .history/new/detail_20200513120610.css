@@ -1,0 +1,39 @@
+.ne-xi{
+    width: 100%;
+}
+.ne-xi .detail{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.ne-xi .detail h1{
+    text-align: center;
+    font-size: 22px;
+    height: 50px;
+    line-height: 50px;
+}
+.ne-xi .detail strong{
+    text-align: center;
+    font-size: 12px;
+    height: 50px;
+    height: 50px;
+    display: inherit;
+    color: #7d7a7a;
+}
+.ne-xi .detaillist{
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+}
+.ne-xi .detaillist p{
+    width: 100%;
+    font-size: 16px;
+    text-indent: 2em;
+    margin-bottom: 10px;
+    line-height: 25px;
+    font-weight: normal
+}
+.ne-xi .detaillist img{
+    width: 100%;
+    height: 100%;
+}

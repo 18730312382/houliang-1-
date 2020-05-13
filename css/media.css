@@ -33,7 +33,7 @@
     }
    
     .bott{
-       width: 100%; 
+       width: 100% !important; 
     }
     .bottom ul {
         width: 100%;
@@ -77,11 +77,11 @@
         position: relative;
         box-sizing: border-box;
         z-index: 2;
-        padding: 2px 20px !important;
+        padding: 2px 12px !important;
     }
     .gongsijianjie b{
         /* display: block; */
-        margin-left: -150px;
+        margin-left: -105px;
 
     }
     .zhichi ul li{
@@ -95,6 +95,26 @@
         box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
         overflow: hidden;
     }
+    .newsfirst li {
+        padding: 0 15px 0 0;
+        margin-bottom: 15px;
+    }
+    .newsfirst li .time {
+        width: 20%;
+        text-align: center;
+    }
+    .newsfirst li .neir {
+        width: 70%;
+        float: left;
+        border-left: 1px solid #e6e6e6;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+    .newsfirst li .pic {
+        display: none;
+    }
+
+
     .news2 li {
         padding: 0 15px 0 0;
         margin-bottom: 15px;

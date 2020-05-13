@@ -197,5 +197,11 @@
         z-index: 2;
         padding: 2px 42px;
     }
-
+    .fly{
+        display: none;
+    }
+    .product ul li:nth-of-type(8) img {
+        margin: 59px 0 !important;
+        width: 100%;
+    }
 }

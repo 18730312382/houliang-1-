@@ -39,6 +39,9 @@
     }
 }
 @media screen and (max-width:640px){
+    .bottom .left{
+        display: none;
+    }
     .bottom .left .hengxian{
        display: none
     }

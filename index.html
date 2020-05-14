@@ -262,6 +262,7 @@
 
         .zhichi ul li img {
             width: 100%;
+            height: 100%;
             transition: all 1s ease-out;
             -o-transition: all 1s ease-out;
             -moz-transition: all 1s ease-out;
@@ -281,6 +282,19 @@
             display: none;
 
         }
+        .bnrTit1{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            white-space: nowrap;
+            color: #fff;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 1000;
+            transform: translate(-50%, -50%);
+        }
+        
     </style>
 </head>
 
@@ -484,7 +498,7 @@
                         </div> -->
                         <div class="swiper-slide banner-slide banner1" datatype="0" datatime="9000">
                             <div class="bnrSlide" style="background-image: url(images/banner001.jpg);" ;=";">
-                                <div style="height: 32%;"></div>
+                                <div style="height: 45%;"></div>
                                 <div class="bnrTit animated"> 厚德载物 上善积粮 </div>
                                 <!-- <div class="h40"></div> -->
                                 <!-- <div class="bnrInfr animated" style="color:#fff;"><img src="images/4-2.png"></div> -->
@@ -492,7 +506,7 @@
                         </div>
                         <div class="swiper-slide banner-slide banner1" datatype="0" datatime="9000">
                             <div class="bnrSlide" style="background-image: url(images/banner0002.jpg);">
-                                <div style="height: 32%;"></div>
+                                <div style="height: 45%;"></div>
                                 <div class="bnrTit animated"> 让餐饮业插上互联网的翅膀，让传统餐饮不再传统 </div>
                                 <!-- <div class="h40"></div> -->
                                 <!-- <div class="bnrInfr animated" style="color:#fff;"><img src="images/5-2.png"></div> -->
@@ -500,7 +514,7 @@
                         </div>
                         <div class="swiper-slide banner-slide banner1" datatype="0" datatime="9000">
                             <div class="bnrSlide" style="background-image: url(images/banner003.jpg);">
-                                <div style="height: 32%;"></div>
+                                <div style="height: 45%;"></div>
                                 <div class="bnrTit animated"> 每年帮扶1000个家庭实现创业致富 </div>
                                 <!-- <div class="h40"></div> -->
                                 <!-- <div class="bnrInfr animated" style="color:#fff;"><img src="images/5-2.png"></div> -->
@@ -508,7 +522,7 @@
                         </div>
                         <div class="swiper-slide banner-slide banner1" datatype="0" datatime="9000">
                             <div class="bnrSlide" style="background-image: url(images/banner004.jpg);">
-                                <div style="height: 32%;"></div>
+                                <div style="height: 45%;"></div>
                                 <div class="bnrTit animated"> 打造时尚 智慧 互动 音乐 场景的餐饮创业孵化平台 </div>
                                 <!-- <div class="h40"></div> -->
                                 <!-- <div class="bnrInfr animated" style="color:#fff;"><img src="images/5-2.png"></div> -->
@@ -647,10 +661,10 @@
                             <img src="./images/baidu.png" />
                         </li>
                         <li>
-                            <img src="./images/kuaishou.jpg" style="width:221px;height:221px" />
+                            <img src="./images/kuaishou.jpg" style="height: 191px;" />
                         </li>
                         <li>
-                            <img src="./images/douyin.jpg" style="width:221px;height:221px" />
+                            <img src="./images/douyin.jpg" style="height: 191px;"/>
                         </li>
                         <li>
                             <img src="./images/weixin.jpg" />
@@ -802,17 +816,17 @@
                 <div class="bd">
                     <ul>
                         <li><a href><img src="images/banner001_mobile.jpg"></a>
-                            <!-- <div class="bnrTit1 animated"> 厚德载物 上善积粮 </div> -->
+                            <div class="bnrTit1 animated"> 厚德载物 <br/> 上善积粮 </div>
                         </li>
                         <li><a href><img src="images/banner002_mobile.jpg"></a>
 
-                            <!-- <div class="bnrTit1 animated"> 让餐饮业插上互联网的翅膀，让传统餐饮不再传统 </div> -->
+                            <div class="bnrTit1 animated"> 让餐饮业插上互联网的翅膀<br/>让传统餐饮不再传统 </div>
                         </li>
                         <li><a href><img src="images/banner003_mobile.jpg"></a>
-                            <!-- <div class="bnrTit1 animated"> 每年帮扶1000个家庭实现创业致富 </div> -->
+                            <div class="bnrTit1 animated"> 每年帮扶1000个<br/>家庭实现创业致富 </div>
                         </li>
                         <li><a href><img src="images/banner004_mobile.jpg"></a>
-                            <!-- <div class="bnrTit1 animated"> 打造时尚 智慧 互动 音乐 场景的餐饮创业孵化平台 </div> -->
+                            <div class="bnrTit1 animated"> 打造时尚 智慧 互动 音乐<br/>场景的餐饮创业孵化平台 </div>
                         </li>
                     </ul>
                 </div>
@@ -838,6 +852,7 @@
                 .slideBox11 .bd li {
                     zoom: 1;
                     vertical-align: middle;
+                    position: relative;
                 }
 
                 .slideBox11 .bd img {
@@ -996,11 +1011,11 @@
                     <li>
                         <img src="./images/baidu.png" />
                     </li>
-                    <li>
-                        <img src="./images/kuaishou.jpg" style="width:141px;height: 141px;" />
+                    <li style="padding-top: 2px;">
+                        <img src="./images/kuaishou.jpg" style="width:144px;height: 144px;" />
                     </li>
-                    <li>
-                        <img src="./images/douyin.jpg" style="width:141px;height: 141px;" />
+                    <li style="padding-top: 2px;">
+                        <img src="./images/douyin.jpg" style="width:144px;height: 144px;" />
                     </li>
                     <li>
                         <img src="./images/weixin.jpg" />
@@ -1605,7 +1620,7 @@
     <script type="text/javascript">
         $(function () {
             var myWidth = $(window).width();
-            console.log(myWidth)
+            // console.log(myWidth)
             if (myWidth <= 1280) {
                 $('header').addClass('nav_fixed');
             }

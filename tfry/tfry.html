@@ -11,14 +11,14 @@
     <meta name="Author" content="">
     <meta content="" name="design">
     <meta name="keywords" content="" />
-    <meta name="description"
-        content="" />
+    <meta name="description" content="" />
     <link rel="stylesheet" type="text/css" href="../css/jquery.fancybox.css" media="screen" />
     <link href="../css/main.css" rel="stylesheet" type="text/css" />
     <link href="../css/animate.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" href="../css/media.css" />
     <link rel="stylesheet" type="text/css" href="../css/lxwm.css" />
+    <script type="text/javascript" src="../js/wow.min.js"></script>
     <style>
         @media screen and (max-width: 640px) {
             .bottom i {
@@ -100,10 +100,9 @@
 
         .zhichi p {
             width: 100%;
-            color: #000;
+            color: #fff;
             font-weight: 600;
-            font-size: 22px;
-            /* height: 40px; */
+            font-size: 18px;
             text-indent: 0.5em;
         }
 
@@ -113,21 +112,24 @@
 
         .zhichi ul li {
             width: 22%;
-            height: 250px;
             float: left;
             margin-left: 1%;
             margin-bottom: 10px;
+            position: relative;
         }
 
         .zhichi ul li img {
             width: 100%;
             height: 160px;
         }
-
-        .zhichi ul li p {
-            font-size: 18px;
-            /* line-height: 35px; */
+        .pbox{
+            width: 100%;
+            background: rgba(0,0,0,0.7);
+            position: absolute;
+            left: 0;
+            bottom: 4px;
         }
+
 
         .liucheng {
             width: 50%;
@@ -148,7 +150,7 @@
                 </div>
             </div>
             <ul class="t-t01 fr">
-                <li><a href="../index.html" >首页</a></li>
+                <li><a href="../index.html">首页</a></li>
                 <li><a href="./tfry1.html" target="_blank">公司介绍</a></li>
                 <!-- <li><a href="about/about.html">同福印象</a></li> -->
                 <li><a href="../new/new.html" target="_blank">新闻资讯</a></li>
@@ -236,7 +238,7 @@
             <div class="w1290">
                 <!-- <h1 class="wow fadeInDown" data-wow-duration="1s">招商政策</h1> -->
                 <!-- <p class="wow fadeInUp" data-wow-duration="1s">当前位置： <a href="../index.html">首页</a> > <a -->
-                        <!-- href="tfry.html">招商政策</a> > 招商政策</p> -->
+                <!-- href="tfry.html">招商政策</a> > 招商政策</p> -->
             </div>
         </div>
     </div>
@@ -257,53 +259,75 @@
         <div></div>
     </div> -->
     <div class="ne-xi w1290">
-        <div class="ry-ti wow fadeInDown" data-wow-duration="2s">
+        <div class="ry-ti wow fadeInUp" data-wow-duration="2s">
             <h1>合作支持</h1>
         </div>
 
-        <div class="zhichi fadeInUp animated">
-            <h3 style="text-indent: 1em;
-            margin-bottom: 20px;">8大服务支持 助力轻松创业 SERVICE SUPPORT</h3>
+        <div class="zhichi fadeInUp animated wow" data-wow-duration="5s" style="animation-duration: 5s">
+            <h2 style="text-align: center;
+            margin-bottom: 20px;">8大服务支持 助力轻松创业 SERVICE SUPPORT</h2>
             <ul>
                 <li>
                     <img src="../images/lx1.jpg" />
-                    <p>Consulting service</p>
-                    <p>创业咨询服务</p>
+                    <div class="pbox">
+                        <p>Consulting service</p>
+                        <p>创业咨询服务</p>
+                    </div>
                 </li>
                 <li>
                     <img src="../images/lx2.jpg" />
-                    <p>Budget analysis</p>
-                    <p>运营预算支持</p>
+                    <div class="pbox">
+                        <p>Budget analysis</p>
+                        <p>运营预算支持</p>
+                    </div>
                 </li>
                 <li>
                     <img src="../images/lxx3.jpg" />
-                    <p>Big data location</p>
-                    <p>大数据选址支持</p>
+                    <div class="pbox">
+                        <p>Big data location</p>
+                        <p>大数据选址支持</p>
+                    </div>
+
                 </li>
                 <li>
                     <img src="../images/lx4.jpg" />
-                    <p>Technical training</p>
-                    <p>技术培训指导</p>
+                    <div class="pbox">
+                        <p>Technical training</p>
+                        <p>技术培训指导</p>
+                    </div>
+
                 </li>
                 <li>
                     <img src="../images/lx5.jpg" />
-                    <p>Advertising</p>
-                    <p>广告宣传支持</p>
+                    <div class="pbox">
+                        <p>Advertising</p>
+                        <p>广告宣传支持</p>
+                    </div>
+
                 </li>
                 <li>
                     <img src="../images/lx6.jpg" />
-                    <p>Image planning</p>
-                    <p>形象规划支持</p>
+                    <div class="pbox">
+                        <p>Image planning</p>
+                        <p>形象规划支持</p>
+                    </div>
+
                 </li>
                 <li>
                     <img src="../images/lx7.jpg" />
-                    <p>Cold chain distribution</p>
-                    <p>冷链配送支持</p>
+                    <div class="pbox">
+                        <p>Cold chain distribution</p>
+                        <p>冷链配送支持</p>
+                    </div>
+
                 </li>
                 <li>
                     <img src="../images/lx8.jpg" />
-                    <p>Help with business</p>
-                    <p>带店运营支持</p>
+                    <div class="pbox">
+                        <p>Help with business</p>
+                        <p>带店运营支持</p>
+                    </div>
+
                 </li>
 
             </ul>
@@ -314,55 +338,55 @@
             <h1>合作流程</h1>
         </div>
         <div class="liucheng">
-            <img src="../images/liucheng (2).jpg" />
+            <img src="../images/liucheng(1).png" />
         </div>
     </div>
 
     </div>
-   
-<div class="back-top" id="top_btn"></div>
-<div class="footer">
+
+    <div class="back-top" id="top_btn"></div>
+    <div class="footer">
         <div class="bottom">
-          <div class="left">
-            <ul>
-              <li><a href="../index.html">首页</a></li>
-              <li><a href="./tfry1.html">公司介绍</a></li>
-              <li><a href="../new/new.html">新闻资讯</a></li>
-              <li><a href="./tfry.html">招商政策</a></li>
-              <li><a href="../tfcy/tfcy.html">品牌介绍</a></li>
-              <li><a href="../tfcy/tfcy9.html">合作案例</a></li>
-              <li><a href="../lxwm/lxwm.html">联系我们</a></li>
-            </ul>
-            <b class="hengxian"></b>
-            <ul class="pinpai">
-              <li><a>食在行</a></li>
-              <li><a>虾本营</a></li>
-              <li><a>鲜米同享</a></li>
-              <li><a>拐角码头</a></li>
-              <li><a>一代掌焖</a></li>
-              <li><a>添鱼</a></li>
-              <li><a>巧露滋</a></li>
-              <li><a>鸡无双</a></li>
-              <li><a>香桃里</a></li>
-              <li><a>茶可茶</a></li>
-              <li><a>虾秘</a></li>
-            </ul>
-          </div>
-     
+            <div class="left">
+                <ul>
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="./tfry1.html">公司介绍</a></li>
+                    <li><a href="../new/new.html">新闻资讯</a></li>
+                    <li><a href="./tfry.html">招商政策</a></li>
+                    <li><a href="../tfcy/tfcy.html">品牌介绍</a></li>
+                    <li><a href="../tfcy/tfcy9.html">合作案例</a></li>
+                    <li><a href="../lxwm/lxwm.html">联系我们</a></li>
+                </ul>
+                <b class="hengxian"></b>
+                <ul class="pinpai">
+                    <li><a>食在行</a></li>
+                    <li><a>虾本营</a></li>
+                    <li><a>鲜米同享</a></li>
+                    <li><a>拐角码头</a></li>
+                    <li><a>一代掌焖</a></li>
+                    <li><a>添鱼</a></li>
+                    <li><a>巧露滋</a></li>
+                    <li><a>鸡无双</a></li>
+                    <li><a>香桃里</a></li>
+                    <li><a>茶可茶</a></li>
+                    <li><a>虾秘</a></li>
+                </ul>
+            </div>
+
             <div class="bott">
                 <div>
-                    <p><img src="../images/wx.png"/></p>
-                    <span><img src="../images/hlewm.jpg"/></span>
+                    <p><img src="../images/wx.png" /></p>
+                    <span><img src="../images/hlewm.jpg" /></span>
                 </div>
                 <div>
-                    <p><img src="../images/wb (2).png"/></p>
-                    <span><img src="../images/wbewm.png"/></span>
+                    <p><img src="../images/wb (2).png" /></p>
+                    <span><img src="../images/wbewm.png" /></span>
                 </div>
             </div>
         </div>
         <div class="copy" style="margin-top:10px;">
-                创业有风险 投资需谨慎 @ 2019版权所有 河北厚粮餐饮管理有限公司 冀ICP备20000395号
-            </div>
+            创业有风险 投资需谨慎 @ 2019版权所有 河北厚粮餐饮管理有限公司 冀ICP备20000395号
+        </div>
     </div>
     <div id="dialogBg">
         <form id="dialog" class="animated">

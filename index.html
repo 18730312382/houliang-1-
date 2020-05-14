@@ -48,6 +48,7 @@
                 display: none;
             }
         }
+
         @media screen and (max-width:992px) {
 
             html,
@@ -411,7 +412,7 @@
                 $(".menuClose").show();
                 $(".menuMain").addClass("hover");
                 $(".menu").addClass("hover");
-                /* $("header").addClass("nav_fixed"); */
+                $("header").addClass("nav_fixed");
                 $(".indRecord").addClass("col");
                 $(".indShare ul li").addClass("yuan");
                 $(".maskBg").stop().fadeIn()
@@ -420,7 +421,7 @@
                 $(".menuClose").hide();
                 $(".menuMain").removeClass("hover");
                 $(".menu").removeClass("hover");
-                $("header").removeClass("nav_fixed");
+                // $("header").removeClass("nav_fixed");
                 $(".indRecord").removeClass("col");
                 $(".indShare ul li").removeClass("yuan");
                 $(".maskBg").stop().fadeOut()
@@ -466,10 +467,10 @@
 
                                 </video>
                                 <div style="height: 32%;"></div>
-                               
+
                             </div>
                         </div>
-                       
+
                     </div>
                     <div class="pagination"></div>
                     <div class="swr-page">01</div>
@@ -574,7 +575,7 @@
                 }
             </script>
 
-          
+
             <div class="section box4 swiper-slide">
                 <div class="zhichi">
                     <h1>战略合作</h1>
@@ -675,7 +676,7 @@
 
                 </div>
             </div>
-            <div class="ne-xi w1290 swiper-slide">
+            <div class="ne-xi w1290 swiper-slide box6">
                 <div class="product">
                     <h3>旗下产品</h3>
                     <h3 style="margin-bottom: 50px;">BRANDS</h3>
@@ -695,10 +696,10 @@
                     </ul>
                 </div>
             </div>
-           
+
         </div>
     </div>
-    
+
     <div class="boxPage">
         <div class="boxArrow"><span>企业简介</span><i></i></div>
         <div class="boxArrow"><span>走进厚粮</span><i></i></div>
@@ -708,7 +709,7 @@
         <div class="boxArrow"><span>旗下品牌</span><i></i></div>
         <!-- <div class="boxArrow"><span>底部导航</span><i></i></div> -->
     </div>
-    
+
     <div id="dialogBg">
         <form id="dialog" class="animated">
             <div class="tc-ss">
@@ -858,7 +859,7 @@
 
                 <dl>
                     <a href="new/detail.html?ID=144">
-                        <dt><img src="images/news02.png"为什么食客“不变心”？食在行店面火爆的秘诀在这里"></dt>
+                        <dt><img src="images/news02.png" 为什么食客“不变心”？食在行店面火爆的秘诀在这里"></dt>
                         <dd>
                             <h1>为什么食客“不变心”？食在行店面火爆的秘诀在这里</h1>
                             <p>2020年厚粮餐饮公司最新推出一个品牌—食在行易拉罐茶油炒饭，瞬间火爆全城。
@@ -1009,19 +1010,19 @@
                     </li>
                 </ul>
                 <div class="bott">
-                        <div>
-                            <p><img src="images/wx.png"/></p>
-                            <span><img src="images/hlewm.jpg"/></span>
-                        </div>
-                        <div>
-                            <p><img src="images/wb (2).png"/></p>
-                            <span><img src="images/wbewm.png"/></span>
-                        </div>
+                    <div>
+                        <p><img src="images/wx.png" /></p>
+                        <span><img src="images/hlewm.jpg" /></span>
                     </div>
+                    <div>
+                        <p><img src="images/wb (2).png" /></p>
+                        <span><img src="images/wbewm.png" /></span>
+                    </div>
+                </div>
             </div>
             <div class="copy" style="margin-top:10px;">
-                    创业有风险 投资需谨慎 @ 2019版权所有 河北厚粮餐饮管理有限公司 冀ICP备20000395号
-                </div>
+                创业有风险 投资需谨慎 @ 2019版权所有 河北厚粮餐饮管理有限公司 冀ICP备20000395号
+            </div>
         </div>
     </div>
     <script>
@@ -1076,9 +1077,9 @@
                 }
             }
             $(document).ready(function () {
-            $("#top_btn").click(function () { if (scroll == "off") return; $("html,body").animate({ scrollTop: 0 }, 600); });
+                $("#top_btn").click(function () { if (scroll == "off") return; $("html,body").animate({ scrollTop: 0 }, 600); });
 
-        });
+            });
             //$(".banner1 .bnrTit,.banner1 .bnrInfr,.banner1 .groupData dd").addClass("fadeIn")
             $(".fadeC").fadeOut();
             $(".fadeTop").delay(800).animate({ top: '-100%' }, 1500, 'linear');
@@ -1157,6 +1158,8 @@
                     $('.section').eq(mySwiper.activeIndex).find(".cstbg4,.cstbg3,.cstList li,.box4Tel,.box4Site").addClass("fadeInUp").removeClass('fadeOutDown');
                     var content_height_box2 = $(".box2").offset().top;
                     var content_height_box4 = $(".box4").offset().top;
+                    var content_height_box5 = $(".box5").offset().top;
+                    var content_height_box6 = $(".box6").offset().top;
 
                     if (content_height_box2 >= 0 && content_height_box2 < 100) {
                         $("header").addClass("nav_fixed");
@@ -1172,11 +1175,27 @@
                             $(".indShare ul li").addClass("yuan");
                         }
                         else {
-                            $("header").removeClass("nav_fixed");
-                            $(".indRecord").removeClass("col");
-                            $(".indShare ul li").removeClass("yuan");
+                            if (content_height_box5 >= 0 && content_height_box5 < 100) {
+                                $("header").addClass("nav_fixed");
+                                $(".indRecord").addClass("col");
+                                $(".indShare ul li").addClass("yuan");
+                            }
+                            else {
+                                if (content_height_box6 >= 0 && content_height_box6 < 100) {
+                                    $("header").addClass("nav_fixed");
+                                    $(".indRecord").addClass("col");
+                                    $(".indShare ul li").addClass("yuan");
+                                }
+                                else {
+                                    $("header").removeClass("nav_fixed");
+                                    $(".indRecord").removeClass("col");
+                                    $(".indShare ul li").removeClass("yuan");
+
+                                }
+                            }
 
                         }
+
                     }
                 },
 

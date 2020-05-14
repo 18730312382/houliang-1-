@@ -1,7 +1,4 @@
 @media screen and (max-width: 500px){
-    .home_banner_mobile{
-        display: block
-    }
     #logo {
         float: left;
         width: auto;

@@ -1,7 +1,4 @@
 @media screen and (max-width: 500px){
-    .home_banner_mobile{
-        display: block
-    }
     #logo {
         float: left;
         width: auto;
@@ -32,12 +29,7 @@
 }
 @media screen and (max-width:640px){
     .home_banner_mobile{
-        display: block
-    }
-}
-@media screen and (max-width:640px){
-    .home_banner_mobile{
-        display: block;
+        display: blo
     }
     .bottom i{
         display: none !important;

@@ -18,8 +18,7 @@ a{text-decoration: none;color: #666666}/* 链接无下划线,有为underline;链
 a:link{color: #666666;}/* 未访问的链接 */
 a:visited{color: #666666;}/* 已访问的链接 */
 a:hover{color: #4077a0;}/* 鼠标在链接上 */
-a:active{color: #666666;
-blr:expression(this.onFocus=this.blur());}/* 点击激活链接 */
+a:active{color: #666666;}/* 点击激活链接 */
 i,em{font-style: normal;}
 body{
 	font-family:"Microsoft YaHei" !important;
@@ -1119,7 +1118,7 @@ padding-right: 5px;
 }
 .banner .swiper-slide-active .bnrSlide{
 	transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);
-	-webkit-transform: ;
+	-webkit-transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);
 	opacity: 1;
 	filter:alpha(opacity=100);
 	visibility: visible;
@@ -1565,7 +1564,7 @@ padding-right: 5px;
 }
 .newsListBox:hover{
 	background: rgba(255,255,255,0.95);
-	background:#fff\0/;
+	/* background:#fff; */
 	transition: 0.3s ease;
 }
 .newsListBox:hover:after{
@@ -1856,8 +1855,7 @@ padding-right: 5px;
 	display: block;
 	padding-top: 66.6666%;
 	border: 1px solid rgba(255,255,255,0.4);
-	border-color: #fff\0/;
-	*border-color: #fff;
+	border-color: #fff;
 	margin: 0 15px;
 	position: relative;
 	border-radius:5px;
@@ -2212,7 +2210,6 @@ padding-right: 5px;
     border-bottom: 2px solid #fff;}
 
 .mo-cy-list dl:nth-child(2n){ margin-right:0;}
-.mobile-in-new{ }
 .mo-new-list dl{ padding-bottom:20px; margin-bottom:20px; border-bottom:1px solid #eee;}
 .mo-new-list dl dt{ width:150px; height:110px; float:left}
 .mo-new-list dl dt img{ width:100%; height:100%;}

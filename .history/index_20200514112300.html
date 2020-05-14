@@ -1259,6 +1259,9 @@
                 // $(this).addClass('active');
                 mySwiper.swipeTo($(this).index());
             });
+
+
+            
             //banner滚动
             var banT0;
             var dataType = $('.banner .banner-slide[dataType="1"]').index();
@@ -1267,11 +1270,9 @@
                 speed: 500,
                 pagination: '.pagination',
                 simulateTouch: false,
-                loop: true,
-                autoplay: true,
+                loop: false,
+                autoplay: false,
                 paginationClickable: true,
-                autoResize:true,
-                onTouchMove:true,
                 onFirstInit: function (swiper) {
                     //开始自动滚动
                     nowTime = $(".banner .banner-slide").eq(0).attr("dataTime");

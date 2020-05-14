@@ -1259,6 +1259,30 @@
                 // $(this).addClass('active');
                 mySwiper.swipeTo($(this).index());
             });
+
+
+            var mySwiper = new Swiper('.tempWrap', {
+                speed: 1000,
+                loop: true,
+                mode: 'vertical',
+                resistance: '100%',
+                loop: false,
+                mousewheelControl: true,
+                //grabCursor: true,
+                simulateTouch: false,
+                paginationClickable: true,
+    
+            });
+            // $('.page-next').on('click', function (e) {
+            //     e.preventDefault()
+            //     mySwiper.swipeNext()
+            // });
+            // $(".boxArrow").click(function (e) {
+            //     e.preventDefault()
+            //     mySwiper.swipeTo($(this).index());
+            // });
+
+            
             //banner滚动
             var banT0;
             var dataType = $('.banner .banner-slide[dataType="1"]').index();
@@ -1267,11 +1291,9 @@
                 speed: 500,
                 pagination: '.pagination',
                 simulateTouch: false,
-                loop: true,
-                autoplay: true,
+                loop: false,
+                autoplay: false,
                 paginationClickable: true,
-                autoResize:true,
-                onTouchMove:true,
                 onFirstInit: function (swiper) {
                     //开始自动滚动
                     nowTime = $(".banner .banner-slide").eq(0).attr("dataTime");

@@ -1259,6 +1259,87 @@
                 // $(this).addClass('active');
                 mySwiper.swipeTo($(this).index());
             });
+
+
+            var mySwiper = new Swiper('.box.swiper-container', {
+                speed: 1000,
+                loop: true,
+                mode: 'vertical',
+                resistance: '100%',
+                loop: false,
+                mousewheelControl: true,
+                //grabCursor: true,
+                simulateTouch: false,
+                paginationClickable: true,
+               
+
+                    //改变结束时添加动画进入class,移除动画消失class
+                    $('.section').eq(mySwiper.activeIndex).find('.box1Ico').addClass('fadeInDown').removeClass('fadeOutUp');
+                    $(".newsTit").addClass("fadeInDown").removeClass('fadeOutUp');
+                    $(".newsTab a").addClass("fadeInUp").removeClass('fadeOutDown');
+                    $(".ab-ti").addClass("fadeInDown").removeClass('fadeOutUp');
+                    $(".ab-shu").addClass("fadeInDown").removeClass('fadeOutUp');
+                    $(".accordion").addClass("fadeInDown").removeClass('fadeOutUp');
+                    $(".new01").addClass("fadeInRight").removeClass('fadeOutRight');
+                    $(".bisList1 dd").addClass("fadeInUp").removeClass('fadeOutUp');
+                    $(".bisPhrase").addClass("fadeInUp").removeClass('fadeOutDown');
+                    $('.section').eq(mySwiper.activeIndex).find(".mask2,.mask1,.cstbg1,.cstbg2").addClass("slideInDown").removeClass('fadeOutUp');
+                    $('.section').eq(mySwiper.activeIndex).find(".box4-slide .imgBox").addClass("slideInUp").removeClass('fadeOutDown');
+                    $('.section').eq(mySwiper.activeIndex).find(".cstbg4,.cstbg3,.cstList li,.box4Tel,.box4Site").addClass("fadeInUp").removeClass('fadeOutDown');
+                    var content_height_box2 = $(".box2").offset().top;
+                    var content_height_box4 = $(".box4").offset().top;
+                    var content_height_box5 = $(".box5").offset().top;
+                    var content_height_box6 = $(".box6").offset().top;
+
+                    if (content_height_box2 >= 0 && content_height_box2 < 100) {
+                        $("header").addClass("nav_fixed");
+                        $(".indRecord").addClass("col");
+                        $(".indShare ul li").addClass("yuan");
+                        gunqilai();
+                    }
+                    else {
+
+                        if (content_height_box4 >= 0 && content_height_box4 < 100) {
+                            $("header").addClass("nav_fixed");
+                            $(".indRecord").addClass("col");
+                            $(".indShare ul li").addClass("yuan");
+                        }
+                        else {
+                            if (content_height_box5 >= 0 && content_height_box5 < 100) {
+                                $("header").addClass("nav_fixed");
+                                $(".indRecord").addClass("col");
+                                $(".indShare ul li").addClass("yuan");
+                            }
+                            else {
+                                if (content_height_box6 >= 0 && content_height_box6 < 100) {
+                                    $("header").addClass("nav_fixed");
+                                    $(".indRecord").addClass("col");
+                                    $(".indShare ul li").addClass("yuan");
+                                }
+                                else {
+                                    $("header").removeClass("nav_fixed");
+                                    $(".indRecord").removeClass("col");
+                                    $(".indShare ul li").removeClass("yuan");
+
+                                }
+                            }
+
+                        }
+
+                    }
+                },
+
+            });
+            // $('.page-next').on('click', function (e) {
+            //     e.preventDefault()
+            //     mySwiper.swipeNext()
+            // });
+            // $(".boxArrow").click(function (e) {
+            //     e.preventDefault()
+            //     mySwiper.swipeTo($(this).index());
+            // });
+
+            
             //banner滚动
             var banT0;
             var dataType = $('.banner .banner-slide[dataType="1"]').index();
@@ -1267,11 +1348,9 @@
                 speed: 500,
                 pagination: '.pagination',
                 simulateTouch: false,
-                loop: true,
-                autoplay: true,
+                loop: false,
+                autoplay: false,
                 paginationClickable: true,
-                autoResize:true,
-                onTouchMove:true,
                 onFirstInit: function (swiper) {
                     //开始自动滚动
                     nowTime = $(".banner .banner-slide").eq(0).attr("dataTime");

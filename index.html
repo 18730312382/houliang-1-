@@ -61,6 +61,14 @@
                 overflow-x: hidden;
             }
         }
+
+        /* 隐藏移动端滚动条 */
+
+        ::-webkit-scrollbar {
+            width: 0px;
+            display: none;
+
+        }
     </style>
     <script language="javascript">
         function SNEW() {
@@ -271,7 +279,10 @@
         .zhichi ul li:hover img {
             transform: rotateY(360deg);
         }
-        .section{overflow: hidden;}
+
+        .section {
+            overflow: hidden;
+        }
     </style>
 </head>
 

@@ -40,7 +40,7 @@
 }
 @media screen and (max-width:640px){
     .bottom .left{
-        display: none;
+        display: none !important;
     }
     .bottom .left .hengxian{
        display: none

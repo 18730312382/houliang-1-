@@ -37,8 +37,11 @@
     .home_banner_mobile{
         display: block
     }
-}
-@media screen and (max-width:640px){
+    .zhichi {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 0 !important;
+    }
     .bottom .left{
         display: none !important;
     }

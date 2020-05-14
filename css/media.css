@@ -166,7 +166,6 @@
     .mobile-in-zhanlue {
         width: 100%;
         margin: auto;
-        margin-bottom: 520px;
     }
     .zhichi{
         width: 100%;
@@ -181,6 +180,9 @@
 
     .zhichi ul {
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .zhichi ul li {

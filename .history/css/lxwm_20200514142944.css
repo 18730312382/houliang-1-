@@ -231,9 +231,7 @@
 /* .bottom i img {
     margin-top: 30px;
 } */
-.bottom .left{
-    width: 60%
-}
+.bottom .left
 .bottom ul {
     width: 57%;
     height: auto;
@@ -265,7 +263,7 @@
     color: black;
 }
 .bott {
-    width: 40%;
+    width: 27%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;

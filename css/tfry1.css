@@ -201,15 +201,15 @@
 }
 .product ul li a {
     font-size: 36px;
-    color: #FFD800;
+    color: #ab1d24;
     line-height: 180px;
     display: block;
 } 
 .product ul li:hover{
-    background: #ffd800
+    background: #ab1d24
 }
 .product ul li a:hover{
-    background: #ffd800;
+    background: #ab1d24;
     color: #ffffff
 }
 .product ul li:nth-of-type(1) img {

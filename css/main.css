@@ -650,7 +650,7 @@ padding-right: 5px;
 	visibility: hidden;
 	transition: 0.4s ease;
 	position:absolute;
-	background:url(../images/wb.png) no-repeat;
+	/* background:url(../images/wb.png) no-repeat; */
 	margin-right: 12px;
 	right:15px;
 	top:0px;
@@ -1405,7 +1405,7 @@ padding-right: 5px;
 .new01 a {
     display: block;
     width: 100%;
-    padding: 39% 0 0;
+    padding: 22% 0 0;
 }
 .new01 .day {
     font-size: 80px;
@@ -2028,13 +2028,12 @@ padding-right: 5px;
     padding-left: 20px;
 }
 .ab-ti p{ padding-bottom:15px;}
-.nav_fixed .t-t01 li{ padding:0 1.1%;}
+.nav_fixed .t-t01 li{ padding:0 3%;}
 .t-t01 li,.t-t01 li a{ font-size:17px; }
 .t-t01 {
     padding-right: 0;
     width: 67%;
 }
-.t-t01 li{ padding:0 1.1%;}
 .t-t01 li:nth-child(6){}
 .t-t01 li:hover,.t-t01 li a:hover{ font-size:18px;}
 .tttt li a{ font-size:15px;}

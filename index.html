@@ -269,6 +269,7 @@
         .zhichi ul li:hover img {
             transform: rotateY(360deg);
         }
+        .section{overflow: hidden;}
     </style>
 </head>
 
@@ -452,7 +453,7 @@
             $(this).parents(".search").removeClass("hover");
         });
     </script>
-    <div class="fly" id="fly"></div>
+    <!-- <div class="fly" id="fly"></div> -->
 
     <div class="box swiper-container">
         <div class="swiper-wrapper">
@@ -1027,55 +1028,55 @@
     </div>
     <script>
         window.onload = function () {
-            floatBox();
-            function floatBox() {
-                var fl = document.getElementById('fly');
+            // floatBox();
+            // function floatBox() {
+            //     var fl = document.getElementById('fly');
 
-                var flWidth = fl.offsetWidth;
-                var flHeight = fl.offsetHeight
+            //     var flWidth = fl.offsetWidth;
+            //     var flHeight = fl.offsetHeight
 
-                var chroX = document.documentElement.clientWidth;//yemian整个的高宽
-                var chroY = document.documentElement.clientHeight;
+            //     var chroX = document.documentElement.clientWidth;//yemian整个的高宽
+            //     var chroY = document.documentElement.clientHeight;
 
-                var offsetLeft = fl.offsetLeft;//盒子的位置
-                var offsetTop = fl.offsetTop;
+            //     var offsetLeft = fl.offsetLeft;//盒子的位置
+            //     var offsetTop = fl.offsetTop;
 
-                var timer = 0;
+            //     var timer = 0;
 
-                //                 console.log(offsetTop)
+            //     //                 console.log(offsetTop)
 
-                var x = 1;
-                var y = 1;
+            //     var x = 1;
+            //     var y = 1;
 
-                window.onresize = function () {
-                    chroX = document.documentElement.clientWidth;//yemian整个的高宽
-                    chroY = document.documentElement.clientHeight;
-                }
+            //     window.onresize = function () {
+            //         chroX = document.documentElement.clientWidth;//yemian整个的高宽
+            //         chroY = document.documentElement.clientHeight;
+            //     }
 
-                function move() {
-                    offsetLeft += x;
-                    offsetTop += y;
-                    fl.style.left = offsetLeft + 'px';
-                    fl.style.top = offsetTop + 'px';
-                    //                     console.log(chroY)
-                }
-                timer = setInterval(function () {
-                    move();
-                    if (offsetTop + flHeight > chroY || offsetTop < 0) {
-                        y = -y;
-                    }
-                    if (offsetLeft + flWidth > chroX || offsetLeft < 0) {
-                        x = -x;
-                    }
-                }, 10)
+            //     function move() {
+            //         offsetLeft += x;
+            //         offsetTop += y;
+            //         fl.style.left = offsetLeft + 'px';
+            //         fl.style.top = offsetTop + 'px';
+            //         //                     console.log(chroY)
+            //     }
+            //     timer = setInterval(function () {
+            //         move();
+            //         if (offsetTop + flHeight > chroY || offsetTop < 0) {
+            //             y = -y;
+            //         }
+            //         if (offsetLeft + flWidth > chroX || offsetLeft < 0) {
+            //             x = -x;
+            //         }
+            //     }, 10)
 
-                fl.onmouseenter = function () {
-                    clearInterval(timer)
-                }
-                fl.onmouseleave = function () {
-                    floatBox()
-                }
-            }
+            //     fl.onmouseenter = function () {
+            //         clearInterval(timer)
+            //     }
+            //     fl.onmouseleave = function () {
+            //         floatBox()
+            //     }
+            // }
             $(document).ready(function () {
                 $("#top_btn").click(function () { if (scroll == "off") return; $("html,body").animate({ scrollTop: 0 }, 600); });
 
